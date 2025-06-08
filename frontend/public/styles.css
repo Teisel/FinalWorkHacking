@@ -1,0 +1,628 @@
+.imgInicio{
+    max-width: 27%;
+}
+
+#buscador{
+    margin-left: 10%;
+    max-width: 60%;
+}
+
+#button-addon2{
+    margin-right: 10%;
+    background-color: #0d6efd;
+}
+
+.buscadorChevere
+{
+    font-family: Lucida Sans;
+}
+
+
+.divTablas{
+    display: flex;
+    justify-content: center;
+    font-family: Lucida Sans;
+}
+
+.divHeader{
+    background-color: rgb(1, 11, 26);
+    background: linear-gradient(to bottom, rgba(1, 11, 26, 1), rgba(3, 22, 51, 0));
+
+    padding: 1%;
+}
+
+.imagenFondo{
+    background: radial-gradient(transparent, rgb(3, 22, 51) 70%),
+    url(Fotos/tkd-104133-1024x576.jpg);
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+body{
+    background-color: rgb(3, 22, 51);
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+    align-items: center;
+}
+
+#root{
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+    margin-bottom: 1%;
+    
+}
+
+.listaInicio{
+    width: 47.5%;
+    margin: 1%;
+    text-align: center;
+}
+
+hr{
+  color: #cfe2ff; 
+}
+
+#arriba{
+    margin-bottom: 2%;
+}
+
+#activos{
+    margin-left: 5%;
+    width: 33.33%;
+}
+
+#historial{
+    margin-right: 5%;
+    width: 33.33%;
+}
+
+#inscrito{
+    width: 33.33%;
+}
+
+table{
+    width: 100%;
+    
+}
+
+
+.divElLog{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10pt;
+}
+
+.textLogin{
+    color: #cfe2ff;
+    margin-top: 10pt;
+    margin-right: 10pt;
+}
+
+.textError{
+    color: #F84848;
+}
+
+.imgLogIn{
+    width: 65%;
+}
+
+#inputEmailLogin{
+    background-color: #084298;
+    border-color: yellow;
+    color: white;
+    margin-right: 5%;
+    width: 100%;
+    height: 100%;
+    min-height: 30pt;
+    max-width: 410pt;
+    
+}
+
+#inputPasswordLogIn{
+    background-color: #084298;
+    border-color: yellow;
+    color: white;
+    width: 100%;
+    height: 100%;
+    min-height: 30pt;
+    max-width: 410pt;
+    width: 100%;
+    height: 100%;
+    min-height: 30pt;
+    max-width: 410pt;
+}
+
+.textInicio{
+    color: #cfe2ff;
+    margin-right: 10pt;
+}
+
+#imgUserInicio{
+   width: 93px;
+   height: 93px;
+   border-color: orange;
+   border-style: solid;
+   background-color: white;
+   margin-right: 10pt;
+}
+
+#contenedorLogIn{
+    background-color: #052c65;
+    margin-top: 10%;
+    margin-left: 30%;
+    max-width: 40%;
+}
+
+#divRegistrame{
+    background-color: #052c65;
+    padding-bottom: 1%;
+}
+
+.imgLogo{
+   width: 100%;
+
+    max-width: 100pt;
+    max-height: 100pt;
+  
+}
+
+#buscadorPU{
+    max-width: 100%;
+    vertical-align: middle;
+    padding-right: 1%;
+
+}
+
+#contenedorLogoPerfil{
+    width: 10%;
+    max-width: 100pt;
+    max-height: 100pt; 
+    padding-right: 1%;
+    
+}
+#divContenedorPerfil{
+    margin: 1%;
+    height: 100%;
+    width: 100%;
+    margin-left: 5%;
+}
+
+#headerPerfil{
+    height: 100pt;
+    align-items: center;
+}
+
+
+#botonBuscadorPerfil{
+    background-color: #0d6efd;
+}
+
+#bottonSalirPerfil{
+    vertical-align: middle;
+    width: 10%;
+    padding-bottom: 1.25%;
+}
+
+.contenedorImgUsuarioPerfil{
+    width: 20%;
+    max-width: 150pt;
+    max-height: 150pt;
+}
+.imgUsuarioPerfil{
+    width: 100%;
+     max-width: 200pt;
+     max-height: 200pt;
+     border-color: orange;
+    border-style: solid;
+    background-color: white;
+   
+ }
+ 
+ .textPerfil{
+    color: #cfe2ff;
+    margin-left: 10pt;
+ }
+
+ #botonPractica{
+     width: 47.5%;
+     margin-right: 5%;
+ }
+
+ #botonEditarPerfilUsuario{
+    width: 47.5%;
+ }
+
+ #botonAyudarOrganizador{
+    width: 32%;
+    margin-right: 2%;
+}
+
+#botonEditarPerfilUsuarioOrganizador{
+   width: 32%;
+}
+#crearTorneo{
+    width: 32%;
+    margin-right: 2%;
+ }
+
+ #botonVideoPractica{
+     background-color:  #08a6ff;
+     margin: 2.5%;
+     width: 45%;
+     height: 100%;
+     max-height: 250pt;
+     min-height: 100pt;
+ }
+
+ .divVideo{
+    width: 100%;
+    flex: 1;
+ }
+
+ #divReproductor
+ {
+     width: 100%;
+     height: 100%;
+     position: absolute;
+ }
+
+ #selectRegi
+{
+    width: 45%;
+    margin-right: 5%;
+}
+
+#selectRegi2
+{
+    width: 40%;
+    margin-right: 5%;
+}
+
+#inputNumber{
+        background-color: #084298;
+        border-color: yellow;
+        color: white;
+        margin-right: 5%;
+        width: 20%;
+        height: 100%;
+        min-height: 30pt;
+        max-width: 410pt;
+}
+
+#inputNumberb{
+    background-color: #084298;
+    border-color: yellow;
+    color: white;
+    width: 20%;
+    height: 100%;
+    min-height: 30pt;
+    max-width: 410pt;
+}
+
+
+#inputNameSignIn{
+    background-color: #084298;
+    border-color: yellow;
+    color: white;
+    margin-right: 5%;
+    width: 100%;
+    height: 100%;
+    min-height: 30pt;
+    max-width: 410pt;
+}
+
+#inputNameAcademySignIn{
+    background-color: #084298;
+    border-color: yellow;
+    color: white;
+    margin-right: 5%;
+    width: 100%;
+    height: 100%;
+    min-height: 30pt;
+    max-width: 410pt;
+}
+
+#inputDirectionAcademySignIn{
+    background-color: #084298;
+    border-color: yellow;
+    color: white;
+    margin-right: 5%;
+    width: 100%;
+    height: 100%;
+    min-height: 30pt;
+    max-width: 410pt;
+}
+
+#inputEmailDaddyMommy{
+    background-color: #084298;
+    border-color: yellow;
+    color: white;
+    margin-right: 5%;
+    width: 100%;
+    height: 100%;
+    min-height: 30pt;
+    max-width: 410pt;
+}
+
+.divSignIn{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ocultardiv
+{
+    display: none;
+}
+
+h1{
+    color: #cfe2ff;
+}
+h2{
+    color: #cfe2ff;
+}
+
+.colorPerron
+{
+    color: #031633;
+}
+
+#botonCancelarInscri
+{
+    margin-right: 2%;
+}
+
+.divInscri
+{
+    margin: 5pt;
+}
+
+.divReproductor{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+    align-items: flex-start;
+    padding: 5px 5%;
+}
+
+.divReproductor .main-video{
+    background: #fff;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.divReproductor .main-video video
+{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.divReproductor .main-video .title
+{
+    color: #333;
+    font-size: 23px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.divReproductor .video-list{
+    background: #fff;
+    border-radius: 5px;
+    height: 520px;
+    overflow-y: scroll;
+}
+
+.divReproductor .video-list::-webkit-scrollbar{
+    width: 7px;
+}
+
+.divReproductor .video-list::-webkit-scrollbar-track{
+    background: #ccc;
+    border-radius: 50px;
+}
+
+.divReproductor .video-list::-webkit-scrollbar-thumb{
+    background: #666;
+    border-radius: 50px;
+}
+
+.divReproductor .video-list .vid video{
+    width: 100px;
+    border-radius: 5px;
+}
+
+.divReproductor .video-list .vid{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #f7f7f7;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 1);
+    cursor: pointer;
+}
+
+.divReproductor .video-list .vid:hover{
+    background: #eee;
+}
+
+.divReproductor .video-list .vid.active{
+    background: #2980b9;
+}
+
+.divReproductor .video-list .vid.active .title{
+    color: #fff;
+}
+
+.divReproductor .video-list .vid .title{
+    color: #333;
+    font-size: 17px;
+}
+
+@media (max-width: 991px)
+{
+    .divReproductor{
+        grid-template-columns: 2fr 1fr;
+        padding: 10px;
+    }  
+}
+
+@media (max-width: 768px)
+{
+    .divReproductor{
+        grid-template-columns: 1fr;
+    }  
+}
+
+.divVideoSelect
+{
+    margin-top: 10%;
+}
+
+.divEditProfile{
+    width: 100%;
+    display: flex;
+    justify-content: 10%;
+}
+
+.imgUser{
+    width: 300px;
+    height: 300px;
+    border-color: orange;
+    border-style: solid;
+    background-color: white;
+    margin-right: 10pt;
+ }
+
+.inputEditprofile{
+    background-color: #084298;
+    border-color: yellow;
+    color: white;
+    margin-right: 5%;
+    width: 100%;
+    height: 100%;
+    min-height: 30pt;
+    max-width: 410pt;
+}
+
+.divEditTourney
+{
+    justify-content: space-between;
+    width: 70%;
+    display: flex;
+}
+
+.buttonEditTourney
+{
+    margin-right: 20pt;
+}
+
+.textEditTourney{
+    color: #cfe2ff;
+    font-size: large;
+    margin-right: 1pt;
+ }
+
+ .categoriasCabios{
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .divTags
+ {
+    display: flex;
+ }
+
+.historialTags
+ {
+     width: 67.5%;
+     max-width: 67.5%;
+     margin-left: 2.5%;
+ }
+
+ .divTagsTags
+{
+    width: 27.5%;
+    max-width: 27.5%;
+    margin-right: 2.5%;
+    background-color: #08a6ff;
+    border-radius: 5px;
+    position: relative;
+    padding: 1%;
+}
+
+.botonTags
+{
+    border-radius: 5px;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    padding: 2%;
+    color: white;
+}
+
+.peligroTags{
+    background-color: darkred;
+}
+
+.chidoTags{
+    background-color:green;
+}
+
+.botonVerTorneo
+{
+    margin-right: 2%;
+}
+
+.divCompetitors
+{
+    max-width: 17.5%;
+    margin-right: 2.5%;
+}
+
+.divGraph
+{
+    max-width: 77.5%;
+    margin-left: 2.5%;
+    justify-content: space-between;
+    display: flex;
+}
+
+.divCat
+{
+   display: flex;
+}
+
+.divHelp
+{
+    align-items: center;
+    margin: 10%;
+}
+
+.inputHelp{
+    background-color: #084298;
+    border-color: yellow;
+    color: white;
+    margin-right: 5%;
+    width: 100%;
+    height: 100%;
+}
+
+.divWah
+{
+    margin: 2.5%;
+}
+
+.divIna
+{
+   display: flex;
+   align-items: center;
+   justify-content: right;
+}
+

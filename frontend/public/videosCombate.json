@@ -1,0 +1,30 @@
+[
+    {
+        "title": "Estiramientos Basicos",
+        "src": "Videos/Combate/Estiramientos_basicos.mp4",
+        "poster": "Logo2.png",
+        "level": 7,
+        "id": 0
+    },
+    {
+        "title": "Pateo",
+        "src": "Videos/Formas/Taegeuk_i_Jang_segunda_forma.mp4",
+        "poster": "Logo2.png",
+        "level": 6,
+        "id": 1
+    },
+    {
+        "title": "Patadas giratorias",
+        "src": "Videos/Formas/Taegeuk_Sam_Jang_tercera_forma.mp4",
+        "poster": "Logo2.png",
+        "level": 5,
+        "id": 2
+    },
+    {
+        "title": "Patadas decendentes",
+        "src": "Videos/Formas/Taegeuk_Sa_Jang_cuarta_forma.mp4",
+        "poster": "Logo2.png",
+        "level": 4,
+        "id": 3
+    }
+]

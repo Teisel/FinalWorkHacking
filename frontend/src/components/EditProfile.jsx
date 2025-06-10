@@ -141,18 +141,15 @@ export class EditProfile extends Component {
                                                 axios.get(searchAthlete + valores.name.toString())
                                                     .then(Response => {
                                                         this.setState({ data3: Response.data });
-                                                        //console.log(Response.data);
                                                         if (Response.data[0] != null) {
                                                             if (Response.data.length === 1) {
                                                                 localStorage.removeItem(userSearched)
                                                                 localStorage.setItem(userSearched, JSON.stringify(Response.data[0]))
-                                                                console.log("Extraño a mi amorcito")
                                                                 window.location.href = "http://localhost:3000/Athlete";
                                                             }
                                                             else {
                                                                 localStorage.setItem(busqueda, JSON.stringify(valores.name.toString()));
                                                                 window.location.href = "http://localhost:3000/AthleteList";
-                                                                console.log("yaiiii");
                                                             }
                                                         }
                                                         else {
@@ -233,9 +230,6 @@ export class EditProfile extends Component {
                                 if (!values.name) {
                                     errors.name = 'Ingrese un nombre';
                                 }
-                                else if (!/^[a-zA-ZÀ-ÿ\s]{1,100}$/.test(values.name)) {
-                                    errors.name = 'Nombre invalido';
-                                }
 
                                 if (!values.pastPassword) {
                                     errors.pastPassword = 'Ingrese la contraseña anterior';
@@ -247,9 +241,6 @@ export class EditProfile extends Component {
 
                                 if (!values.password) {
                                     errors.password = 'Ingrese una contraseña';
-                                }
-                                else if (!/^(?=.*[A-Z])(?=.{2,}[$@$!%*?&+_()-='?¿¡!"{}])([A-Za-z\d$@$!%*?&]|[^ ]){8,100}$/.test(values.password)) {
-                                    errors.password = "Contraseña invalida";
                                 }
                                 else if (values.pastPassword === values.password) {
                                     errors.password = 'Ingrese una nueva contraseña';
@@ -286,9 +277,6 @@ export class EditProfile extends Component {
                                 if (!values.nameAcademy && user.type === 'organizador' && values.academy === 'Escuela') {
                                     errors.nameAcademy = 'Ingrese el nombre de la nueva escuela'
                                 }
-                                else if (!/^[a-zA-ZÀ-ÿ\s]{1,20}$/.test(values.nameAcademy) && user.type === 'organizador' && values.academy === 'Escuela') {
-                                    errors.nameAcademy = 'Nombre de academia invalido'
-                                }
 
                                 if (!values.directionAcademy && user.type === 'organizador' && values.academy === 'Escuela') {
                                     errors.directionAcademy = 'Ingrese la dirección de la academia'
@@ -299,10 +287,7 @@ export class EditProfile extends Component {
                             }}
 
                             onSubmit={(values) => {
-                                //console.log(values);
-                                //console.log(user);
                                 let image = document.querySelector('.carousel-item.active img').getAttribute('src');
-                                //console.log(image);
 
                                 let finalValues = {
                                     idAcademy: values.academy,
@@ -363,11 +348,9 @@ export class EditProfile extends Component {
                                         .catch(error => {
                                             console.log(error)
                                         })
-                                    //window.location.href="http://localhost:3000/LogIn"
                                     this.tostada();
                                 }
                                 else {
-                                    //console.log(finalValues);
                                     axios
                                         .put(putUser + user.id, finalValues)
                                         .then(response => {
@@ -376,7 +359,6 @@ export class EditProfile extends Component {
                                         .catch(error => {
                                             console.log(error)
                                         })
-                                    //window.location.href="http://localhost:3000/LogIn"
                                     this.tostada();
                                 }
 

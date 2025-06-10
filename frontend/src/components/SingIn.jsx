@@ -141,9 +141,6 @@ export class SingIn extends Component {
                                 errores.email = 'Ingrese un correo';
 
                             }
-                            else if (!/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/.test(valores.email)) {
-                                errores.email = 'Correo invalido';
-                            }
                             else if (true) {
 
                                 axios.get(verify + valores.email).then(Response => {
@@ -155,9 +152,7 @@ export class SingIn extends Component {
                                         this.setState({ posibleUsuario: null });
                                     }
                                 })
-                                //console.log(this.state.a);
                                 if (this.state.a === true) {
-                                    //console.log(this.state.posibleUsuario.name + 'OwO');
                                     errores.email = 'Correo ya utilizado';
                                     this.setState({ a: false });
                                 }
@@ -168,14 +163,9 @@ export class SingIn extends Component {
                             if (!valores.name) {
                                 errores.name = 'Ingrese un nombre';
                             }
-                            else if (!/^[a-zA-ZÀ-ÿ\s]{1,100}$/.test(valores.name)) {
-                                errores.name = 'Nombre invalido';
-                            }
+                            
                             if (!valores.password) {
                                 errores.password = 'Ingrese una contraseña';
-                            }
-                            else if (!/^(?=.*[A-Z])(?=.{2,}[$@$!%*?&+_()-='?¿¡!"{}])([A-Za-z\d$@$!%*?&]|[^ ]){8,100}$/.test(valores.password)) {
-                                errores.password = "Contraseña invalida";
                             }
 
                             if (this.state.fecha > actualDate) {
@@ -184,9 +174,7 @@ export class SingIn extends Component {
                             if (!valores.emailDaddyMommy && valores.type === 'deportista' && this.state.fecha > legalDate) {
                                 errores.emailDaddyMommy = 'Ingrese el correo de tu tutor'
                             }
-                            else if (!/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/.test(valores.emailDaddyMommy) && valores.type === 'deportista' && this.state.fecha > legalDate) {
-                                errores.emailDaddyMommy = 'Correo invalido';
-                            }
+
                             else if (valores.email === valores.emailDaddyMommy) {
                                 errores.emailDaddyMommy = 'Ingrse el correo de su tutor';
                             }
@@ -222,9 +210,7 @@ export class SingIn extends Component {
                             if (!valores.nameAcademy && valores.type === 'organizador' && valores.academy === 'Escuela') {
                                 errores.nameAcademy = 'Ingrese el nombre de la nueva escuela'
                             }
-                            else if (!/^[a-zA-ZÀ-ÿ\s]{1,20}$/.test(valores.nameAcademy) && valores.type === 'organizador' && valores.academy === 'Escuela') {
-                                errores.nameAcademy = 'Nombre de academia invalido'
-                            }
+
                             if (valores.sex === 'Sexo') {
                                 errores.sex = 'Ingrese su sexo biologico';
                             }
@@ -234,14 +220,11 @@ export class SingIn extends Component {
                             }
 
 
-
-
                             console.log(errores);
                             return errores;
                         }}
 
                         onSubmit={async (valores) => {
-                            //console.log('Hi hI')
                             this.setDisable();
                             valores.fecha = this.state.fecha;
                             let finalValues = await {
@@ -310,9 +293,6 @@ export class SingIn extends Component {
                                     .catch(error => {
                                         console.log(error)
                                     })
-
-
-                                //window.location.href="http://localhost:3000/LogIn"
                             }
                             else if (valores.academy === 'Escuela') {
                                 let academyValues = {
@@ -339,7 +319,6 @@ export class SingIn extends Component {
                                     .catch(error => {
                                         console.log(error)
                                     })
-                                //window.location.href="http://localhost:3000/LogIn"
 
                             }
                             else {
@@ -352,12 +331,7 @@ export class SingIn extends Component {
                                     .catch(error => {
                                         console.log(error)
                                     })
-                                //window.location.href="http://localhost:3000/LogIn"
-
                             }
-
-                            //console.log(valores);
-
                         }}
                     >
                         {({ values, handleSubmit, handleChange, handleBlur, errors, touched }) => (

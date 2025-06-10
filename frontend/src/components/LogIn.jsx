@@ -57,9 +57,6 @@ export class LogIn extends Component {
                                 errores.email = 'Ingrese un correo';
 
                             }
-                            else if (!/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/.test(valores.email)) {
-                                errores.email = 'Correo invalido';
-                            }
                             console.log(errores.email);
                             return errores;
                         }}
@@ -69,14 +66,7 @@ export class LogIn extends Component {
                                 await axios.get(verify + valores.email).then(Response => {
                                     this.setState({ data: Response.data });
                                     if (Response.data.name != null) {
-                                        //console.log(valores.password);
-                                        //console.log(Response.data.password);
-                                        //console.log(cifrar(valores.password));
-                                        //console.log(decifrar(Response.data.password))
-                                        //console.log(this.state.data.password);
                                         console.log(decifrar(this.state.data.password))
-                                        //const correctPassword = bcryptjs.compareSync( password, Response.data.password );
-                                        //console.log(decifrar(""))
                                         if (valores.password === decifrar(Response.data.password)) {
                                             console.log("Contraseña correcta");
                                             axios.get(completeUser + Response.data.id).then(Response => {
